@@ -21,7 +21,7 @@ username = secret["username"]
 password = secret["password"]
 host     = secret["host"]
 port     = secret["port"]
-database = secret["database"]
+database = secret["dbname"]
 
 engine = create_engine(
     f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
